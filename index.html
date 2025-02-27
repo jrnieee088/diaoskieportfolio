@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">John Ernie</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">John Ernie Diao</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="Mukha.jpg.jpg" alt="John Ernie Diao profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">John Ernie Diao</h1>
+        <p class="section__text__p2">Student at Fullbright College</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('https://www.canva.com/design/DAGgNRDADCs/z_eJSjf1PfVvdYNnYGAGIA/edit?utm_content=DAGgNRDADCs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton')">View CV</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <!-- Facebook Social Links -->
+          <img src="facebook-brands.svg" alt="My Facebook profile" class="icon" onclick="window.open('https://web.facebook.com/jhnrnieeeeee')" />
+        </div>
+      </div>                                                                                              
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="joowew.jpg" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="laptop-code-solid.svg" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>Student & Aspiring Developer</p>
+            </div>
+            <div class="details-container">
+              <img src="school-solid.svg" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>B.Sc. Student, Fullbright College</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi! I'm John Ernie Diao, a passionate student pursuing a Bachelor's degree in computer science at Fullbright College. I’m excited about learning new technologies, solving problems, and building things that can make a positive impact on the world. I'm currently focused on expanding my knowledge in web development, particularly front-end technologies like HTML, CSS, and JavaScript.
+            </p>
+            <p>
+              I love working on projects that challenge my creativity and help me grow as a developer. In my free time, I enjoy experimenting with code, contributing to open-source projects, and exploring new trends in tech. I’m always looking for opportunities to learn, collaborate, and grow in the tech industry.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="angles-down-solid.svg" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Still Learning</h2>
+            <div class="article-container">
+              <article>
+                <img src="check-solid.svg" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Currently learning</p>
+                </div>
+              </article>
+              <article>
+                <img src="check-solid.svg" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Currently learning</p>
+                </div>
+              </article>
+              <article>
+                <img src="check-solid.svg" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Currently learning</p>
+                </div>
+              </article>
+              <article>
+                <img src="check-solid.svg" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Currently learning</p>
+                </div>
+              </article>
+              <article>
+                <img src="check-solid.svg" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Visual Basic</h3>
+                  <p>Currently learning</p>
+                </div>
+              </article>
+              <article>
+                <img src="check-solid.svg" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Currently learning</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="angles-down-solid.svg" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Project</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="erniee.jpg" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <a href="https://jrnieee088.github.io/ernies-fourthpolyo/" class="btn btn-color-2 project-btn" target="_blank">Live Demo</a>
+              <a href="https://github.com/jrnieee088/ernies-fourthpolyo.git" class="btn btn-color-2 project-btn" target="_blank">Github</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="angles-down-solid.svg" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:diaojohnernie@gmail.com">diaojohnernie@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="facebook-brands.svg" alt="Facebook icon" class="icon contact-icon" />
+          <p><a href="https://web.facebook.com/jhnrnieeeeee" target="_blank">Facebook</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 John Ernie Diao. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
